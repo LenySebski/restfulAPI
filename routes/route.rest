@@ -1,0 +1,25 @@
+GET http://localhost:3007/pets/get/byname/Teemy
+
+
+
+###
+
+
+POST http://localhost:3007/pets/add
+Content-Type: application/json
+
+{
+"_id": "3",
+"name": "Teemy",
+"age": 3
+}
+
+
+###
+
+
+
+
+delete http://localhost:3007/pets/reset
+Content-Type: application/json
+
