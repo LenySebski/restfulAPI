@@ -1,8 +1,6 @@
-GET http://localhost:3007/pets/get/byname/Teemy
 
-
-
-###
+//REST Client extention is a great way to test Your API inside of the VSCode 
+//These are some of the routes which I used to test the app
 
 
 POST http://localhost:3007/pets/add
@@ -10,15 +8,70 @@ Content-Type: application/json
 
 {
 "_id": "3",
-"name": "Teemy",
+"name": "Gonzo",
 "age": 3
+}
+
+###
+POST http://localhost:3007/pets/add
+Content-Type: application/json
+
+{
+
+"name": "Kao",
+"age": 2,
+"animal": "Kangaroo"
 }
 
 
 ###
+POST http://localhost:3007/pets/add
+Content-Type: application/json
+
+{
+
+"name": "Boo",
+"age": 1,
+"animal":"Hamster"
+}
+
+###
+GET http://localhost:3007/pets/get
+
+###
+GET http://localhost:3007/pets/get/byname/Kao
 
 
 
+
+###
+
+POST http://localhost:3007/pets/update/3
+Content-Type: application/json
+
+{
+
+"name": "Kang",
+"age": 2,
+"animal": "Kangaroo",
+"friendly": false
+}
+
+
+
+
+###
+GET http://localhost:3007/pets/get/byid/3
+
+###
+
+DELETE http://localhost:3007/pets/delete/3
+
+###
+
+GET http://localhost:3007/pets/get
+
+###
 
 delete http://localhost:3007/pets/reset
 Content-Type: application/json
